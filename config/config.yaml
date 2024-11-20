@@ -1,0 +1,128 @@
+# Path related
+raw_dataset_dir: data/dataset/
+raw_dataset_dir_med_codes: data/dataset/med_codes
+raw_dataset_path_train_ben: data/processed/Beneficiary_train.pkl
+raw_dataset_path_train_inp: data/processed/Inpatient_train.pkl
+raw_dataset_path_train_outp: data/processed/Outpatient_train.pkl
+raw_dataset_path_train_inoutben: data/processed/inoutben_train.pkl
+raw_dataset_path_provider_stats: data/processed/data_provider_stats.pkl
+raw_dataset_path_data_combined: data/processed/Data_combined.pkl
+raw_dataset_path_data_simil: data/processed/Data_inp_simil.pkl
+raw_dataset_path_ICD_embeddings: data/processed/Data_ICD_embeddings.pkl
+raw_dataset_path_DRG_embeddings : data/processed/Data_DRG_embeddings.pkl
+raw_dataset_path_v_code_embeddings: data/processed/Data_v_code_embeddings.pkl
+raw_dataset_path_ICD_embeddings_combined: data/processed/Data_ICD_v_code_combined_embeddings.pkl
+raw_dataset_path_PROC_embeddings: data/processed/Data_Proccode_embeddings.pkl
+raw_dataset_path_data_matrix: data/processed/Data_simil_matrix.pkl
+raw_dataset_path_final_dataset: data/processed/Data_final_dataset.pkl
+raw_dataset_path_if_rank: data/processed/Data_if_rank.pkl
+raw_dataset_path_lof_rank: data/processed/Data_lof_rank.pkl
+raw_dataset_path_rrcf_rank: data/processed/Data_rrcf_rank.pkl
+raw_dataset_path_if_amt_rank: data/processed/Data_if_amt_rank.pkl
+raw_dataset_path_usage: data/processed/data_matrix_usage_count.pkl
+raw_dataset_path_simil_sub: data/processed/dataset_simil_sub.pkl
+raw_dataset_provider_data: data/processed/Provider_data.pkl
+Isolation_forest_model: data/processed/Isolation_forest_model.pkl
+Lof_model: data/processed/Lof_model.pkl
+rrcf_model: data/processed/rrcf_model.pkl
+if_prv_model: data/processed/if_prv_model.pkl
+Dataset_borda_prv_list: data/processed/Dataset_borda_prv_list.pkl
+raw_dataset_shap_if: data/processed/raw_dataset_shap_if.pkl
+raw_dataset_shap_lof: data/processed/raw_dataset_shap_lof.pkl
+raw_dataset_shap_rrcf: data/processed/raw_dataset_shap_rrcf.pkl
+raw_dataset_shap_if_prv: data/processed/raw_dataset_shap_if_prv.pkl
+raw_dataset_path_ICD_codes: data/processed/raw_dataset_path_ICD_codes.pkl
+
+
+int_columns_ben:
+- NoOfMonths_PartACov
+- NoOfMonths_PartBCov
+- IPAnnualReimbursementAmt               
+- IPAnnualDeductibleAmt                  
+- OPAnnualReimbursementAmt 
+- OPAnnualDeductibleAmt
+- State                              
+- County
+- ChronicCond_Alzheimer              
+- ChronicCond_Heartfailure           
+- ChronicCond_KidneyDisease          
+- ChronicCond_Cancer                 
+- ChronicCond_ObstrPulmonary         
+- ChronicCond_Depression             
+- ChronicCond_Diabetes 
+- ChronicCond_IschemicHeart              
+- ChronicCond_Osteoporasis               
+- ChronicCond_rheumatoidarthritis        
+- ChronicCond_stroke               
+obj_columns_ben:
+- BeneID                            
+- Gender                             
+- Race                               
+- RenalDiseaseIndicator                                                                                   
+datetime_columns_ben:
+- DOB
+- DOD
+datetime_columns_inp:
+- ClaimStartDt
+- ClaimEndDt
+- AdmissionDt
+- DischargeDt
+int_columns_inp:
+- InscClaimAmtReimbursed
+- DeductibleAmtPaid
+obj_columns_inp:
+- BeneID
+- ClaimID
+- Provider
+- AttendingPhysician
+- OperatingPhysician
+- OtherPhysician
+- ClmAdmitDiagnosisCode
+- DiagnosisGroupCode
+- ClmDiagnosisCode_1
+- ClmDiagnosisCode_2
+- ClmDiagnosisCode_3
+- ClmDiagnosisCode_4
+- ClmDiagnosisCode_5
+- ClmDiagnosisCode_6
+- ClmDiagnosisCode_7
+- ClmDiagnosisCode_8
+- ClmDiagnosisCode_9
+- ClmDiagnosisCode_10
+- ClmProcedureCode_1
+- ClmProcedureCode_2
+- ClmProcedureCode_3
+- ClmProcedureCode_4
+- ClmProcedureCode_5
+- ClmProcedureCode_6
+datetime_columns_outp:
+- ClaimStartDt
+- ClaimEndDt
+int_columns_outp:
+- InscClaimAmtReimbursed
+- DeductibleAmtPaid
+obj_columns_outp:
+- BeneID          
+- ClaimID
+- Provider
+- AttendingPhysician
+- OperatingPhysician
+- OtherPhysician
+- ClmDiagnosisCode_1
+- ClmDiagnosisCode_2
+- ClmDiagnosisCode_3
+- ClmDiagnosisCode_4
+- ClmDiagnosisCode_5
+- ClmDiagnosisCode_6
+- ClmDiagnosisCode_7
+- ClmDiagnosisCode_8
+- ClmDiagnosisCode_9
+- ClmDiagnosisCode_10
+- ClmProcedureCode_1
+- ClmProcedureCode_2
+- ClmProcedureCode_3
+- ClmProcedureCode_4
+- ClmProcedureCode_5
+- ClmProcedureCode_6
+- ClmAdmitDiagnosisCode
+

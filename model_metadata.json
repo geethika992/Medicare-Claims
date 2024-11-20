@@ -1,0 +1,8 @@
+{
+    "last_trained_time": "2024-11-18 11:14:22",
+    "dataset_files": [
+        "Train_Inpatientdata-1542865627584.csv",
+        "Train_Outpatientdata-1542865627584.csv",
+        "Train_Beneficiarydata-1542865627584.csv"
+    ]
+}
