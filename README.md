@@ -23,14 +23,17 @@ Follow these steps to run the analysis on your healthcare provider data:
 - Upload a CSV or Excel file containing healthcare provider data into the `/data/dataset` folder. Ensure that only the relevant files are in this folder to avoid processing errors.
 - Make sure the dataset follows the format expected by the model for optimal performance.
 
-### 2. **Run the Analysis**
+### 2. **Execute the application**
+- streamlit run Streamlit_introduction.py
+
+### 3. **Run the Analysis**
 - Navigate to the **Model Training** page in the repository.
 - Execute the necessary scripts to start the model training and anomaly detection process. The scripts will process the dataset and detect anomalies based on the unsupervised learning model.
 
-### 3. **Review the Results**
+### 4. **Review the Results**
 - Once the analysis is complete, the app will display a summary of flagged anomalies.
 - Visualizations will be presented to highlight areas of concern, including potential issues with overuse of medical codes, fraud in claims, or inefficiencies in provider behavior.
   
-### 4. **Further Investigation**
+### 5. **Further Investigation**
 - The app provides a ranked list of healthcare providers based on the severity of detected anomalies.
 - Use this ranking to prioritize providers for further review and investigation.
